@@ -1,0 +1,14 @@
+.top-header-logo {
+    display: flex;        
+    flex-direction: row;   
+    gap: 10px;
+    background-color: yellow;
+    height: 60px;
+}
+h1 {
+  display: inline-block;
+}
+
+p {
+    display: inline-block;
+}

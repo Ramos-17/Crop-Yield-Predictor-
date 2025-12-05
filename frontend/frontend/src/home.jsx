@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import "./layout.css";
 
 export default function Home() {
   useEffect(() => {
@@ -12,8 +13,15 @@ export default function Home() {
 
   return (
     <div>
-      <h1>Crop Yield Predictor </h1>
-      <p>This is the homepage</p>
+      <div className="top-header">
+        <div className="top-header-logo">
+            <h1>
+                Hello
+            </h1>
+            <p>hellooo</p>
+            
+        </div>
+      </div>
     </div>
   );
 }
