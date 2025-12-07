@@ -4,9 +4,6 @@ frontend/node_modules/
 # Python cache
 backend/__pycache__/
 
-# ML model files
-backend/*.pkl
-
 # Environment variables
 *.env
 
