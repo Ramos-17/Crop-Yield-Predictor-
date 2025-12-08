@@ -161,9 +161,9 @@ export default function Home() {
           {error && <p className="text-output">{error}</p>}
 
           {prediction !== null && (
-            <div style={{ marginTop: "1rem" }}>
-              <h2>Predicted Yield</h2>
-              <p>{prediction.toFixed(2)} hg/ha</p>
+            <div className="correct-output-div">
+              <h2 className="predicted-yield-text-header">Predicted Yield:</h2>
+              <p className="prediction-result">{prediction.toFixed(2)} hg/ha</p>
             </div>
           )}
         </div>

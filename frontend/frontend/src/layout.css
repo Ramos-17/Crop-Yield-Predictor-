@@ -337,9 +337,37 @@ box-shadow: 0 0 12px rgba(255, 255, 255, 0.35),
   padding-top: 100px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
   font-weight: 500;          /* medium weight for elegance */
-  font-size: 36px;           /* adjust as needed */
+  font-size: 30px;           /* adjust as needed */
   line-height: 1.4;          /* comfortable spacing */
   color: #e74c3c;            /* white text */
+  letter-spacing: 0.5px;     /* subtle spacing for sophistication */
+  margin: 0;                 /* remove default margins for clean layout */
+  text-align: left;
+}
+
+.correct-output-div {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.predicted-yield-text-header {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;          /* medium weight for elegance */
+  font-size: 30px;           /* adjust as needed */
+  line-height: 1.4;          /* comfortable spacing */
+  color: #fff;            /* white text */
+  letter-spacing: 0.5px;     /* subtle spacing for sophistication */
+  margin: 0;                 /* remove default margins for clean layout */
+  text-align: left;
+}
+
+.prediction-result {
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 500;          /* medium weight for elegance */
+  font-size: 30px;           /* adjust as needed */
+  line-height: 1.4;          /* comfortable spacing */
+  color: #fff;            /* white text */
   letter-spacing: 0.5px;     /* subtle spacing for sophistication */
   margin: 0;                 /* remove default margins for clean layout */
   text-align: left;
