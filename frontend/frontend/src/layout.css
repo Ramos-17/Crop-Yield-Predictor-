@@ -87,13 +87,6 @@ html {
   margin-top: 100px;
 }
 
-.text-output{
-  color: red;
-  margin-top: 100px;
-  display: flex;
-  justify-content: center;
-}
-
 .area-div {
   display: flex;
   justify-content: center;
@@ -336,12 +329,12 @@ box-shadow: 0 0 12px rgba(255, 255, 255, 0.35),
 .text-output {
   padding-top: 100px;
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 500;          /* medium weight for elegance */
-  font-size: 30px;           /* adjust as needed */
-  line-height: 1.4;          /* comfortable spacing */
-  color: #e74c3c;            /* white text */
-  letter-spacing: 0.5px;     /* subtle spacing for sophistication */
-  margin: 0;                 /* remove default margins for clean layout */
+  font-weight: 700;          
+  font-size: 30px;           
+  line-height: 1.4;          
+  color: #e74c3c;            
+  letter-spacing: 0.5px;     
+  margin: 0;                 
   text-align: left;
 }
 
@@ -349,26 +342,29 @@ box-shadow: 0 0 12px rgba(255, 255, 255, 0.35),
   padding-top: 100px;
   display: flex;
   flex-direction: row;
+  justify-content: center;
+}
+
+.yield-header-div {
+  margin-right: 10px;
 }
 
 .predicted-yield-text-header {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 500;          /* medium weight for elegance */
-  font-size: 30px;           /* adjust as needed */
-  line-height: 1.4;          /* comfortable spacing */
-  color: #fff;            /* white text */
-  letter-spacing: 0.5px;     /* subtle spacing for sophistication */
-  margin: 0;                 /* remove default margins for clean layout */
+  font-weight: 700;          
+  font-size: 30px;           
+  color: #fff;            
+  letter-spacing: 0.5px;    
+  margin: 0;                
   text-align: left;
 }
 
 .prediction-result {
   font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-weight: 500;          /* medium weight for elegance */
-  font-size: 30px;           /* adjust as needed */
-  line-height: 1.4;          /* comfortable spacing */
-  color: #fff;            /* white text */
-  letter-spacing: 0.5px;     /* subtle spacing for sophistication */
-  margin: 0;                 /* remove default margins for clean layout */
+  font-weight: 300;          
+  font-size: 30px;           
+  color: #fff;            
+  letter-spacing: 0.5px;     
+  margin: 0;                 
   text-align: left;
 }

@@ -100,6 +100,7 @@ export default function Home() {
                 value={formData.Area}
                 onChange={handleChange}
                 placeholder="India"
+                autocomplete="off"
                 required
               />
             </div>
@@ -113,6 +114,7 @@ export default function Home() {
                 value={formData.Item}
                 onChange={handleChange}
                 placeholder="Maize"
+                autocomplete="off"
                 required
               />
             </div>
@@ -162,8 +164,12 @@ export default function Home() {
 
           {prediction !== null && (
             <div className="correct-output-div">
-              <h2 className="predicted-yield-text-header">Predicted Yield:</h2>
-              <p className="prediction-result">{prediction.toFixed(2)} hg/ha</p>
+              <div className="yield-header-div">
+                <h2 className="predicted-yield-text-header">Predicted Yield:</h2>
+              </div>
+              <div>
+                <p className="prediction-result">{prediction.toFixed(2)} hg/ha</p>
+              </div>              
             </div>
           )}
         </div>
