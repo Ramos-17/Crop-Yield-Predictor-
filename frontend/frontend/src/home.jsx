@@ -89,12 +89,12 @@ export default function Home() {
           </div>
         </div>
 
-        {/* Simple form + prediction area (your teammate can style this later) */}
-        <div className="center-container" style={{ padding: "2rem" }}>
+        <div className="center-container">
           <form onSubmit={handleSubmit} className="prediction-form">
-            <div>
-              <label>Area (Country):</label>
+            <div className="area-div">
+              <label className="area-text">Area (Country):</label>
               <input
+                className="area-input-box"
                 type="text"
                 name="Area"
                 value={formData.Area}
@@ -104,9 +104,10 @@ export default function Home() {
               />
             </div>
 
-            <div>
-              <label>Item (Crop):</label>
+            <div className="item-div">
+              <label className="item-text">Item (Crop):</label>
               <input
+                className="item-input-box"
                 type="text"
                 name="Item"
                 value={formData.Item}
@@ -116,9 +117,10 @@ export default function Home() {
               />
             </div>
 
-            <div>
-              <label>Average Rainfall (mm/year):</label>
+            <div className="rain-div">
+              <label className="rain-text">Average Rainfall (mm/year):</label>
               <input
+                className="rain-input-box"
                 type="number"
                 name="average_rain_fall_mm_per_year"
                 value={formData.average_rain_fall_mm_per_year}
@@ -127,9 +129,10 @@ export default function Home() {
               />
             </div>
 
-            <div>
-              <label>Pesticides (tonnes):</label>
+            <div className="pesticide-div">
+              <label className="pesticides-text">Pesticides (tonnes):</label>
               <input
+                className="pesticides-input-box"
                 type="number"
                 name="pesticides_tonnes"
                 value={formData.pesticides_tonnes}
@@ -138,9 +141,10 @@ export default function Home() {
               />
             </div>
 
-            <div>
-              <label>Average Temperature (°C):</label>
+            <div className="temp-div">
+              <label className="temperature-text">Average Temperature (°C):</label>
               <input
+                className="temp-input-box"
                 type="number"
                 name="avg_temp"
                 value={formData.avg_temp}
@@ -149,12 +153,12 @@ export default function Home() {
               />
             </div>
 
-            <button type="submit" disabled={loading}>
+            <button className="submit-button" type="submit" disabled={loading}>
               {loading ? "Predicting..." : "Predict Yield"}
             </button>
           </form>
 
-          {error && <p style={{ color: "red" }}>{error}</p>}
+          {error && <p className="text-output">{error}</p>}
 
           {prediction !== null && (
             <div style={{ marginTop: "1rem" }}>
